@@ -1,0 +1,134 @@
+.careerPathFrame {
+    padding-top: 20px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #580000;
+    font-family: Poppins, sans-serif;
+    padding-bottom: 60px;
+   
+    
+  }
+  
+  .careerPathBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+  }
+  
+  .careerPaths {
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 95px;
+    
+    margin-bottom: 4px;
+  }
+  
+  .youMaySelect {
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: rgba(88, 0, 0, 0.8);
+    text-align: left;
+    padding-left: 95px;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+  
+  .card {
+    position: relative;
+    width: 280px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    border-top: 1px solid rgba(88, 0, 0, 0.2);
+border-right: 1px solid rgba(88, 0, 0, 0.2);
+border-left: 1px solid rgba(88, 0, 0, 0.2);
+box-sizing: border-box;
+   
+  }
+  
+  .photoBackground {
+    width: 100%;
+    height: 280px;
+    border-top: 1px solid rgba(88, 0, 0, 0.2);
+border-right: 1px solid rgba(88, 0, 0, 0.2);
+border-left: 1px solid rgba(88, 0, 0, 0.2);
+box-sizing: border-box;
+    background-color: #e6aaaa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+  }
+  
+  .textBackground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #ffd3d3;
+    box-shadow: 0px -1px 23px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid rgba(88, 0, 0, 0.2);
+border-bottom: 1px solid rgba(88, 0, 0, 0.2);
+border-left: 1px solid rgba(88, 0, 0, 0.2);
+box-sizing: border-box;
+    
+  }
+  
+  .cardTitle {
+    position: absolute;
+    
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #580000;
+  }
+  
+  .cardImage {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
