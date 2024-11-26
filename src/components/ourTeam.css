@@ -22,10 +22,9 @@
   .ourTeamTitle {
     font-size: 32px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 0px;
     font-family: Poppins, sans-serif;
-    text-align: left;
-    padding-left: 95px;
+    
   }
   
   .ourTeamDescription {

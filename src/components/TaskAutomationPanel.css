@@ -1,0 +1,235 @@
+/* Container for the entire Task Panel */
+.task-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .task-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .task-header h2 {
+    font-size: 24px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-header p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .view-dropdown {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-task-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .add-task-btn svg {
+    margin-right: 8px;
+  }
+  
+  /* Main Calendar Section */
+  .task-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-calendar {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  /* Task Form Section */
+  .task-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .task-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .task-form h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #888;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .close-btn:hover {
+    color: #333;
+  }
+  
+  .task-title-input, .task-date-input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .save-btn {
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .save-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Task List Section */
+  .task-list {
+    flex: 1;
+  }
+  
+  .task-list h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item .task-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-item h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .task-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .task-item svg {
+    color: #ff9800;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .task-item svg:hover {
+    color: #e65100;
+  }
+  
+  /* Notification Section */
+  .error-notification {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 100;
+  }
+  
+  .task-day {
+    background-color: #c8e6c9 !important;
+    border-radius: 50%;
+  }
+  
+  .task-day:hover {
+    background-color: #a5d6a7 !important;
+  }
+  
+  /* Toast Notifications */
+  .toast-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .toast-success {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .toast-error {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .toast-info {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .toast-warning {
+    background-color: #ff9800;
+    color: white;
+  }
+  

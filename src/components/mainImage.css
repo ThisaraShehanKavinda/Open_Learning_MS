@@ -1,0 +1,25 @@
+.imagecontainer {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  
+  .image {
+    width: 100%; 
+    max-width: 1416px; 
+    height: auto; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    animation: fadeInUp 1s ease-in-out;
+    
+  }
+  

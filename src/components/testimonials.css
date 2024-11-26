@@ -1,0 +1,90 @@
+.testimonials-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    max-width: 1900px;
+    align-items: center;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0px;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: darkred;
+  }
+  
+  .testimonial-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-bubble {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #770707, #925b27);
+    border-radius: 24px;
+    padding: 1.5rem;
+    max-width: 120%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .chat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid #fff;
+  }
+  
+  .chat-content {
+    text-align: left;
+  }
+  
+  .chat-message {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    color: #c2c2c2;
+  }
+  
+  .chat-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: red;
+    opacity: 0.8;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: rgb(36, 18, 12);
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

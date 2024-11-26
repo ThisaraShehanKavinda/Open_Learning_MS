@@ -1,0 +1,365 @@
+
+.calendar-container {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+.main-calendar .react-calendar {
+    width: 100%;
+    height: 500px;
+    font-size: 1.2rem;
+    color: #980f0f; 
+  }
+
+  .main-calendar .react-calendar__tile:hover {
+    background-color: #980f0f; 
+    color: white; 
+    cursor: pointer;  
+  }
+  
+  
+  .react-calendar__month-view__days__day {
+    color: #980f0f; 
+  }
+  
+  .react-calendar__navigation button {
+    color: #980f0f; 
+  }
+  
+
+  .react-calendar__month-view__weekdays__weekday {
+    color: #980f0f; 
+  }
+  
+  
+  .view-dropdown {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    cursor: pointer;
+    color: #420202;
+  }
+  
+  .add-event-btn {
+    padding: 10px 20px;
+    background-color: #580000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-event-btn:hover {
+    background-color: #7a0000;
+  }
+  
+  
+  .calendar-main {
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .main-calendar {
+    flex: 2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .react-calendar {
+    font-size: 1.2rem;
+  }
+  
+ 
+  .event-indicator {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #be0000;
+    border-radius: 50%;
+    margin: 2px auto;
+  }
+  
+ 
+  .event-day {
+    background-color: purple;
+    color: white;
+    border-radius: 0%;
+    padding: 5px;
+  }
+  
+  .error-notification {
+    position: fixed;
+    top: 15%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #641c1c;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); 
+    z-index: 2000; 
+    animation: slideIn 0.3s ease-out, fadeOut 3s ease forwards;
+  }
+   
+  @keyframes slideIn {
+    0% {
+      transform: translate(-50%, -50%) translateY(-50px);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+ 
+  .monthly-view-container {
+    background-color: #f4f7f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .monthly-overview-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkred;
+    margin-bottom: 20px;
+  }
+  
+  .monthly-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .monthly-column {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .month-header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .month-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkred;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  
+  .monthly-event-card {
+    display: flex;
+    align-items: center;
+    background-color: #eaf1f2;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .monthly-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .event-icon {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .event-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #34495e;
+    margin: 0;
+  }
+  
+  .event-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .monthly-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .monthly-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+ 
+  .event-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+   
+  }
+  
+  .event-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: scaleIn 0.3s ease-out;
+    
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #580000;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #420202;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .close-btn:hover {
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .event-title-input,
+  .event-date-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .save-btn {
+    padding: 10px 20px;
+    background-color: #580000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #7a0000;
+  }
+  
+
+ /* Weekly Heatmap Section */
+.weekly-heatmap {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.weekly-heatmap h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.weekly-heatmap canvas {
+  width: 80%; /* Scale width (adjust percentage as needed) */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Prevents the canvas from exceeding its container */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tooltip Styling for Heatmap */
+.chartjs-tooltip {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

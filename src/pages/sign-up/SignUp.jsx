@@ -54,7 +54,7 @@ const SignUp = () => {
           <div className='separator'></div>
 
           <div className='signUpOtherOptions'>
-            <label htmlFor='sign Up'>Or Sign Up with</label>
+            <label className='or' htmlFor='sign Up'>Or Sign Up with</label>
             <button className='socialBtn facebookBtn'>
               <img src={facebookIcon} alt='Facebook Icon' />
               Sign Up with Facebook

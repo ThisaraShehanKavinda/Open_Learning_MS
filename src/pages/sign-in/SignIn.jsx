@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import facebookIcon from '../../assets/Facebook F.png';
 import googleIcon from '../../assets/Google.png';
 import HeaderBackground from '../../assets/Header Background.svg';
@@ -6,6 +7,15 @@ import usjpLogo from '../../assets/usjp logo.png';
 import './signIn.css';
 
 const SignIn = () => {
+  const navigate = useNavigate();
+
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    // Add sign-in logic here (e.g., authentication)
+    // After successful sign-in, navigate to the home page
+    navigate('/home'); // Replace '/home' with the path to your home page
+  };
+
   return (
     <div className='SignInContainer'>
       <div className='Header'>
@@ -17,7 +27,7 @@ const SignIn = () => {
       </div>
 
       <div className='signinFormBackground'>
-        <form className='signinForm'>
+        <form className='signinForm' onSubmit={handleSignIn}>
           <div className='signInSection'>
             <div className='email'>
               <label htmlFor='email'>Email Address</label>
@@ -34,7 +44,9 @@ const SignIn = () => {
             <div className='forgotPassword'>
               <label htmlFor='forgotPassword'>Forgot password?</label>
             </div>
-            <button className='signInBtn'>Sign In</button>
+            <button type='submit' className='signInBtn'>
+              Sign In
+            </button>
           </div>
 
           <div className='separator'></div>

@@ -21,9 +21,9 @@ const Header = ({ featuredCoursesRef }) => {
       <header className='header'>
         <div className='header-content'>
           <div className='header-left'>
-            <div className='platform-info'>
-              <p className='platform-title'>OPEN LEARNING PLATFORM</p>
-              <p className='university-name'>
+            <div className='platforminfo5'>
+              <p className='platform-heading5'>OPEN LEARNING PLATFORM</p>
+              <p className='university-name5'>
                 University Of Sri Jayewardenepura
               </p>
             </div>

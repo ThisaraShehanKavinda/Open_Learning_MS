@@ -1,84 +1,90 @@
+import { motion } from 'framer-motion';
 import React from 'react';
-import logo1 from '../../assets/Logo1.png';
-import logo2 from '../../assets/Logo2.png';
-import logo3 from '../../assets/Logo3.png';
-import usjplogo from '../../assets/usjp logo.png';
-import './getStarted.css';
+import { FaBookOpen, FaChalkboardTeacher, FaComments } from 'react-icons/fa';
+import { IoMdRocket } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/usjp logo.png';
+import '../get-started/getStarted.css';
 
 const GetStarted = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/Welcome');
+  };
+
   return (
-    <div>
-      <div className='container'>
-        <div className='background-gradient' />
-        <img className='usjp-logo' src={usjplogo} alt='usjLogo' />
-        <div className='header-text'>OPEN LEARNING PLATFORM - USJP</div>
-        <div className='get-started-btn'>
-          <div className='btn-background'>
-            <div className='btn-text'>Get Started</div>
-          </div>
+    <div className='get-started-body'>
+      <div className='get-started-containerget'>
+        <div className='background-animation'>
+          <div className='circle circle-1'></div>
+          <div className='circle circle-2'></div>
+          <div className='circle circle-3'></div>
         </div>
 
-        <div className='card-left'>
-          <div className='card-inner'>
-            <div className='card-shadow-1' />
-            <div className='card-shadow-2' />
-          </div>
-          <div className='circle logo-circle-1' />
-          <img className='logo-img-1' src={logo3} alt='logo3' />
-          <div className='text-primary'>
-            Comprehensive <br /> Learning Resources
-          </div>
-          <div className='text-secondary'>
-            Video Lectures: High-quality, on-demand video content that students
-            can watch at their own pace.
-            <br />
-            Downloadable Resources: Course materials such as slides, PDFs,
-            e-books, and supplementary documents.
-            <br />
-            Interactive Quizzes and Assignments: Regular assessments to
-            reinforce learning and provide instant feedback on progress.
-          </div>
+        <motion.div
+          className='header-sectionget'
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <img src={logo} alt='USJP Logo' className='usjp-logoget' />
+          <h1 className='header-titleget'>Open Learning Platform</h1>
+          <p className='header-subtitleget'>
+            University of Sri Jayewardenepura
+          </p>
+        </motion.div>
+
+        <div className='features-section'>
+          <motion.div
+            className='feature-card'
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <FaChalkboardTeacher className='feature-icon' />
+            <h3>Interactive Lectures</h3>
+            <p>
+              Experience world-class teaching through engaging online sessions
+              designed for students of all disciplines.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className='feature-card'
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <FaBookOpen className='feature-icon' />
+            <h3>Comprehensive Materials</h3>
+            <p>
+              Access a wide range of curated content, from eBooks to quizzes,
+              tailored to your learning needs.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className='feature-card'
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <FaComments className='feature-icon' />
+            <h3>Collaborative Community</h3>
+            <p>
+              Connect with peers and educators through vibrant discussion forums
+              and support systems.
+            </p>
+          </motion.div>
         </div>
-        <div className='card-right'>
-          <div className='card-inner'>
-            <div className='card-shadow-1' />
-            <div className='card-shadow-2' />
-          </div>
-          <div className='circle logo-circle-2' />
-          <img className='logo-img-2' src={logo2} alt='logo2' />
-          <div className='text-primary'>
-            Flexible and Personalized <br /> Learning Experience
-          </div>
-          <div className='text-secondary'>
-            Self-paced Learning: Students can learn at their own speed,
-            revisiting materials as needed.
-            <br />
-            Progress Tracking: Dashboards that help students track their
-            progress, set goals, and stay motivated.
-            <br />
-            Customizable Learning Paths: Options for students to choose courses
-            that align with their interests and career goals.
-          </div>
-        </div>
-        <div className='card-third'>
-          <div className='card-inner'>
-            <div className='card-shadow-1' />
-            <div className='card-shadow-2' />
-          </div>
-          <div className='circle logo-circle-3' />
-          <img className='logo-img-3' src={logo1} alt='logo1' />
-          <div className='text-primary'>Community and Support</div>
-          <div className='text-secondary'>
-            Discussion Forums: Spaces for students to ask questions, share
-            knowledge, and collaborate with peers.
-            <br />
-            Live Sessions and Webinars: Opportunities to interact with
-            instructors and industry experts in real-time.
-            <br />
-            Support Services: Access to technical support, academic counseling,
-            and peer mentoring to ensure a smooth learning experience.
-          </div>
-        </div>
+
+        <motion.div
+          className='cta-sectionget'
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <button className='cta-buttonget' onClick={handleGetStarted}>
+            Get Started <IoMdRocket className='cta-iconget' />
+          </button>
+        </motion.div>
       </div>
     </div>
   );

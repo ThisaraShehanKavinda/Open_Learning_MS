@@ -1,29 +1,29 @@
-/* General layout and header styles */
+
 .intro-container {
     width: 100%;
     min-height: ovh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
     background-color: #f4f4f4;
   }
   
   .header {
-    width: 100%;
-    max-width: 1500px;
+    width: 100%; 
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 0; 
+    right: 0; 
     z-index: 1000;
-  }
+}
+
   
   .header-content {
     display: flex;
@@ -34,30 +34,32 @@
   .header-left {
     display: flex;
     flex-direction: column;
-    margin-right: auto;
+    margin-right: 900px;
   }
   
-  .platform-info {
+  .platforminfo5 {
     text-align: left;
     font-family: 'Poppins', sans-serif;
-    padding-left: 70px;
+    padding-left: 0px;
     line-height: 7px;
+    margin-top: 10px;
   }
   
-  .platform-title {
+  .platform-heading5 {
     font-size: 15px;
     font-weight: 700;
     color: #580000;
+    margin-left: 0px;
     
   }
   
-  .university-name {
+  .university-name5 {
     font-size: 13.6px;
     font-weight: 500;
     color: #666;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
     
     
   }
@@ -67,24 +69,24 @@
     height: 50px;
     object-fit: cover;
     position: absolute;
-    left: 20px;
+    left: 5cqb;
   }
   
   .courses-link {
     font-size: 14px;
     font-weight: 600;
-    color: #580000; /* Original text color */
+    color: #580000; 
     cursor: pointer;
     transition: color 0.3s ease;
-    padding: 0; /* Remove padding to make it look like text */
-    background: none; /* Ensures no background color */
-    border: none; /* Removes border */
-    outline: none; /* Removes default button outline */
+    padding: 0; 
+    background: none;
+    border: none; 
+    outline: none; 
     padding-right: 60px;
   }
   
   .courses-link:hover {
-    color: #3498db; /* Hover color */
+    color: #3498db; 
   }
   
   .separator {
@@ -94,7 +96,7 @@
     margin: 20px 0;
   }
   
-  /* Styling for the login button */
+  
   .login-btn {
     background: linear-gradient(90deg, #a76807, #580000);
     color: white;
@@ -108,7 +110,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-right: 30px;
+    margin-right: 70px;
     
   }
   

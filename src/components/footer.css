@@ -1,4 +1,4 @@
-/* General footer container */
+
 .footer {
     width: 100%;
     position: relative;
@@ -68,6 +68,7 @@
   
   
   .sponsor-info {
+    padding-top: 30px;
     text-align: center;
   }
   
@@ -118,6 +119,7 @@
   .contact-title {
     font-weight: 400;
     margin-bottom: 8px;
+    padding-top: 30px;
   }
   
   .contact-details p {

@@ -1,0 +1,90 @@
+/* Container */
+.video-display-container {
+  width: 100%;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: #580000;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/* Background image */
+.backgroundimage2 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* Header styles */
+.headervideo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-titlevideo {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  margin-bottom: 10px;
+}
+
+.sub-titlevideo {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+}
+
+/* Description */
+.descriptionvideo {
+  width: 80%;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  line-height: 1.5;
+}
+
+/* Video section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; /* Increased bottom margin */
+  height: 700px; /* Increased height for the video container */
+}
+
+.video-section iframe {
+  width: 90%; /* Adjust width to increase the size */
+  height: 80%; /* Adjust height to increase the size */
+  max-width: 100%; /* Ensure the video player does not overflow */
+  max-height: 100%; /* Ensure the video player does not overflow */
+  border-radius: 15px;
+  border: 2px solid #be0000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Contact info */
+.contact-info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  margin-bottom: 30px;
+}
+
+.email-link {
+  color: #580000;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #be0000;
+}

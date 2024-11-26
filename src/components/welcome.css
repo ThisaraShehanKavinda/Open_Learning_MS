@@ -1,0 +1,64 @@
+.welcome-component-modern {
+  padding: 30px;
+  background: linear-gradient(to right, #ffecd2, #f4754a);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-title {
+  font-size: 28px;
+  color: darkred;
+  margin-bottom: 10px;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.suggestion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-suggestion-modern {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-suggestion-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-icon {
+  font-size: 40px;
+  color: #ff6f61;
+}
+
+.course-details-modern {
+  flex: 1;
+}
+
+.highlighted-text-modern {
+  color: #ff6f61;
+  font-weight: bold;
+}
+
+.course-image-modern {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}

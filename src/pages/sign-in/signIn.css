@@ -38,15 +38,16 @@
     width: 60px;
     height: 60px;
   }
-  
-  .header {
-    color: rgba(255, 255, 255, 0.80);
+  .title{
     font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
     text-align: center;
+    padding-top: 15px;
   }
+  
+ 
   
   
   .signinFormBackground {
@@ -59,7 +60,7 @@
     display: flex;
     justify-content: center;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    margin-top: 100px;
+    margin-top: 200px;
   }
   
  
@@ -106,6 +107,9 @@
     margin-bottom: 5px;
   }
   
+  .forgotPassword{
+    color: #FFF;
+  }
   
   .signInBtn {
     width: 100%;

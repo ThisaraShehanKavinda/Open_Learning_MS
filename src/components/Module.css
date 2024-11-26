@@ -1,0 +1,249 @@
+/* Module Card Container */
+.module-card {
+  background: linear-gradient(145deg, #6a7eb0, #4b5d79);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px;
+  position: relative;
+}
+
+.module-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.module-card-header {
+  background: #3b4e7c;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.module-card-header h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.module-card-body {
+  padding: 16px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #2c3e50;
+}
+
+.module-card-footer {
+  background-color: #34495e;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #444;
+}
+
+.module-card-footer .quiz-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.module-card-footer .quiz-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.module-card-footer .quiz-btn.disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.module-card-footer .quiz-btn.disabled:hover {
+  background-color: #7f8c8d;
+  transform: none;
+}
+
+
+.module-card-footer .locked,
+.module-card-footer .unlocked {
+  font-size: 2rem;
+  color: #bdc3c7;
+}
+
+.module-card-footer .locked {
+  color: #e74c3c;
+}
+
+.module-card-footer .unlocked {
+  color: #2ecc71;
+}
+
+.quiz-popup {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px; 
+  border-radius: 10px;
+  width: 90%; 
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+  max-height: 90%; 
+}
+
+.quiz-popup h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quiz-question {
+  margin-bottom: 10px;
+}
+
+.quiz-question p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.quiz-question .options label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.quiz-question .options input {
+  margin-right: 10px;
+}
+
+.quiz-popup button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quiz-popup button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.quiz-popup .score {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #e74c3c;
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.unlocked-icon {
+  color: #2ecc71;
+}
+
+.locked-icon {
+  color: #e74c3c;
+}
+
+/* Video Section */
+.video-sec {
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: #34495e; 
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.video-sec h4 {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.video-sec iframe {
+  width: 100%;
+  max-width: 500px; 
+  height: auto; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.video-sec .mark-watched-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c; 
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.video-sec .mark-watched-btn:hover {
+  background-color: #c0392b; 
+  transform: scale(1.05); 
+}
+
+
+
+.materials-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #34495e;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.materials-section h4 {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.materials-section button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.materials-section button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
