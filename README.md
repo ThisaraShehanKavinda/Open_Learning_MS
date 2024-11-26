@@ -37,7 +37,7 @@ Basic knowledge of React and front-end development.
 Installation
 
 Clone the repository:
-git clone https://github.com/YourGitHubUsername/open-learning-platform.git  
+git clone https://github.com/ThisaraShehanKavinda/Open_Learning_MS.git  
 cd open-learning-platform 
 
 Install dependencies:
